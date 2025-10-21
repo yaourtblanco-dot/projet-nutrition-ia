@@ -17,7 +17,7 @@ except AttributeError:
     st.error("Clé API Google non trouvée. Veuillez la configurer dans .streamlit/secrets.toml")
     st.stop() 
 
-model = genai.GenerativeModel('gemini-pro') 
+model = genai.GenerativeModel('gemini-1.5-flash') 
 
 # --- CORPS DE L'APPLICATION ---
 col1, col2, col3 = st.columns(3)
